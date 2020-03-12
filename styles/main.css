@@ -8,47 +8,168 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
 
 .header {
   height: 700px;
-  width: 1260px;
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
   text-transform: uppercase;
   font-weight: 400; }
+  .header__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .header__top {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     top: 35px;
-    left: calc(50% - 57.5px); }
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 1020px;
+    height: 160px; }
+  .header__logo {
+    position: relative;
+    width: 115px;
+    height: 76px; }
+    .header__logo-img {
+      width: 100%; }
   .header__phone, .header__link {
     position: relative;
     top: 56px; }
   .header__phone {
-    margin: 0 82px;
-    color: white; }
+    color: white;
+    letter-spacing: 2px; }
+    .header__phone-link {
+      text-decoration: none;
+      color: white; }
   .header__link {
-    margin: 0 82px;
     text-decoration: none;
     color: white;
     border-bottom: 1px solid;
     -webkit-transition: color 0.2s;
-    transition: color 0.2s; }
+    transition: color 0.2s;
+    letter-spacing: 2px; }
     .header__link:hover {
       color: #9fadc2; }
   .header__title {
     position: absolute;
     top: 414px;
     left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
     width: 1020px;
-    color: white; }
+    height: 160px;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: none;
+    letter-spacing: -1.5px; }
+    .header__title::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 35px;
+      background-color: white;
+      margin-top: -10px; }
 
 .nav {
   text-transform: uppercase;
