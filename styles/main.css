@@ -175,19 +175,25 @@ h1 {
   text-transform: uppercase;
   position: absolute;
   bottom: 25px;
-  left: 0;
-  right: 0; }
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 1020px; }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .nav__list--item {
       padding: 7px 20px;
       margin: 0 22.5px;
       list-style-type: none; }
+      .nav__list--item:first-child {
+        margin-left: 0; }
+      .nav__list--item:last-child {
+        margin-right: 0; }
     .nav__list--active {
       background-color: #182f33;
       border-radius: 10px; }
@@ -282,7 +288,14 @@ h1 {
   .gallery__img {
     margin-left: 20px;
     border-radius: 8px;
-    height: 256px; }
+    height: 256px;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+    .gallery__img:hover {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95); }
   .gallery__img-1 {
     width: 673px; }
   .gallery__img-2 {
@@ -405,8 +418,11 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .testimonials__person:last-child {
+      margin-right: 0; }
     .testimonials__person-photo {
-      border-radius: 50%; }
+      border-radius: 50%;
+      margin-bottom: 28px; }
     .testimonials__person-name {
       font-weight: bold;
       font-size: 24px;
@@ -418,7 +434,8 @@ h1 {
       margin-top: 13px;
       text-align: center;
       font-size: 16px;
-      line-height: 27px; }
+      line-height: 27px;
+      color: #3e3e3e; }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -468,9 +485,14 @@ h1 {
             flex-direction: column; }
   .contact__description {
     color: #9fadc2;
-    font-size: 14px; }
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 8px; }
   .contact__text {
-    color: #3e3e3e; }
+    color: #3e3e3e;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 27px; }
 
 h1 {
   font-family: "Roboto", sans-serif;
