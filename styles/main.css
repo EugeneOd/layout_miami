@@ -375,7 +375,56 @@ h1 {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      width: 413px; }
+  .consultation__input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 413px;
+    height: 48px;
+    padding: 17px 0 17px 17px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #f7f8ff; }
+    .consultation__input::-webkit-input-placeholder {
+      color: #b9c1ce; }
+    .consultation__input::-moz-placeholder {
+      color: #b9c1ce; }
+    .consultation__input:-ms-input-placeholder {
+      color: #b9c1ce; }
+    .consultation__input::-ms-input-placeholder {
+      color: #b9c1ce; }
+    .consultation__input::placeholder {
+      color: #b9c1ce; }
+  .consultation__input:focus {
+    outline: none;
+    font-weight: 700;
+    border: 3px solid #0075ff;
+    border-radius: 8px; }
+  .consultation__button {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 16px;
+    padding: 21px 0;
+    border: 0;
+    background-color: #0075ff;
+    -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: bold;
+    color: white;
+    -webkit-transition: color 0.5s, background-color 0.2s;
+    transition: color 0.5s, background-color 0.2s; }
+  .consultation__button:hover {
+    color: #b9c1ce; }
+  .consultation__button:focus {
+    outline: none;
+    background-color: #1fffff; }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -475,14 +524,6 @@ h1 {
     margin-right: 108px; }
   .contact__address {
     margin-right: 211px; }
-  .contact__form-action {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
   .contact__description {
     color: #9fadc2;
     font-size: 14px;
@@ -493,6 +534,63 @@ h1 {
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 27px; }
+  .contact__form-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 413px; }
+  .contact__input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 413px;
+    height: 48px;
+    padding: 17px 0 17px 17px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #f7f8ff; }
+    .contact__input::-webkit-input-placeholder {
+      color: #b9c1ce; }
+    .contact__input::-moz-placeholder {
+      color: #b9c1ce; }
+    .contact__input:-ms-input-placeholder {
+      color: #b9c1ce; }
+    .contact__input::-ms-input-placeholder {
+      color: #b9c1ce; }
+    .contact__input::placeholder {
+      color: #b9c1ce; }
+  .contact__input:focus {
+    outline: none;
+    font-weight: 700;
+    border: 3px solid #0075ff;
+    border-radius: 8px; }
+  .contact__button {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 16px;
+    padding: 21px 0;
+    border: 0;
+    background-color: #0075ff;
+    -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: bold;
+    color: white;
+    -webkit-transition: color 0.5s, background-color 0.2s;
+    transition: color 0.5s, background-color 0.2s; }
+  .contact__button:hover {
+    color: #b9c1ce; }
+  .contact__button:focus {
+    outline: none;
+    background-color: #1fffff; }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -512,7 +610,7 @@ h1 {
 
 body {
   margin: 0;
-  background: #eee;
+  background: #f7f8ff;
   font-weight: normal;
   font-style: normal;
   font-family: "Roboto", sans-serif; }
