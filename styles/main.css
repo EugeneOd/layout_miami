@@ -139,14 +139,24 @@ h1 {
     letter-spacing: 2px; }
     .header__phone-link {
       text-decoration: none;
-      color: white; }
+      color: white;
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s; }
+      .header__phone-link:focus {
+        outline: none;
+        color: #1fffff; }
+      .header__phone-link:hover {
+        color: #9fadc2; }
   .header__link {
     text-decoration: none;
     color: white;
     border-bottom: 1px solid;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .header__link:focus {
+      outline: none;
+      color: #1fffff; }
     .header__link:hover {
       color: #9fadc2; }
   .header__title {
@@ -198,12 +208,16 @@ h1 {
       background-color: #182f33;
       border-radius: 10px; }
     .nav__list-link {
+      display: block;
       color: white;
       text-decoration: none;
       -webkit-transition: color 0.2s;
       transition: color 0.2s; }
       .nav__list-link:hover {
         color: #9fadc2; }
+      .nav__list-link:focus {
+        outline: none;
+        color: #1fffff; }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -227,8 +241,16 @@ h1 {
   .about-us__title-text {
     font-size: 48px; }
     .about-us__title-text-link {
+      display: inline-block;
       text-decoration: none;
-      color: #0075ff; }
+      color: #0075ff;
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s; }
+      .about-us__title-text-link:focus {
+        outline: none;
+        color: #1fffff; }
+      .about-us__title-text-link:hover {
+        color: #b9c1ce; }
   .about-us__text {
     margin-left: 192px; }
     .about-us__text-title {
@@ -281,10 +303,18 @@ h1 {
     font-size: 16px;
     margin-top: 24px;
     margin-bottom: 40px; }
-  .gallery__span {
+  .gallery__link {
+    text-decoration: none;
     color: #0075ff;
     font-weight: bold;
-    margin-left: 20px; }
+    margin-left: 20px;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .gallery__link:focus {
+      outline: none;
+      color: #1fffff; }
+    .gallery__link:hover {
+      color: #b9c1ce; }
   .gallery__img {
     margin-left: 20px;
     border-radius: 8px;
@@ -312,21 +342,33 @@ h1 {
     margin: 0 auto;
     width: 188px;
     height: 56px;
+    text-align: center;
     border: 2px solid #0075ff;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 8px;
-    background-color: #0075ff;
+    background-color: white;
     -webkit-transition: color 0.3s, background-color 0.3s;
     transition: color 0.3s, background-color 0.3s; }
     .gallery__button:hover {
       color: #0075ff;
-      background-color: #fff; }
+      background-color: #0075ff; }
     .gallery__button-link {
-      color: #fff;
+      border-radius: 6px;
+      display: block;
+      color: #0075ff;
       text-decoration: none;
-      text-align: center;
-      line-height: 56px; }
+      line-height: 52px;
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 1px;
+      -webkit-transition: color 0.3s, background-color 0.3s;
+      transition: color 0.3s, background-color 0.3s; }
+      .gallery__button-link:hover {
+        color: white; }
+      .gallery__button-link:focus {
+        outline: none;
+        background-color: #1fffff; }
 
 h1 {
   font-family: "Roboto", sans-serif;
