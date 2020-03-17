@@ -478,7 +478,7 @@ h1 {
     @media screen and (max-width: 970px) {
       .gallery__img {
         height: 131px;
-        width: 33vw;
+        width: 40vw;
         margin: 0; } }
     .gallery__img:hover {
       -webkit-transform: scale(0.95);
