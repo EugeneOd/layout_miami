@@ -13,14 +13,16 @@
   <header class="header">
     <div class="header__wrap">
     <div class="header__top">
+      <a href="tel:123-456-7890" class="header__phone--logo"></a>
       <div class="header__phone">
+
         <a href="tel:123-456-7890" class="header__phone-link">+1 234 555-55-55</a>
       </div>
       <div class="header__logo">
         <img src="images/logo.png" alt="logo Miami"  class="header__logo">
       </div>
       <div class="header__action">
-        <a href="#" class="header__link">
+        <a href="tel:123-456-7890" class="header__link">
           Call to order
         </a>
       </div>
@@ -28,7 +30,11 @@
     <div class="header__title">
       <h1 class="header__title--text">Miami <br> Condo Kings</h1>
     </div>
-    <div class="header_nav">
+    <div class="header__nav">
+      <input id="toggle" class="menu__toggle" type="checkbox">
+      <label for="toggle" class="menu__btn">
+         <span class="menu__span"></span>
+       </label>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list--item nav__list--active">
@@ -60,6 +66,11 @@
             <a href="#contact" class="nav__list-link">
               Contacts
             </a>
+          </li>
+          <li>
+            <div class="nav__list--link">
+              <a href="tel:123-456-7890" class="header__phone-link">+1 234 555-55-55<br><br>Call to order</a>
+            </div>
           </li>
         </ul>
       </nav>
