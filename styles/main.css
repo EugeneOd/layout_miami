@@ -260,6 +260,22 @@ h1 {
   visibility: hidden; }
 
 @media screen and (max-width: 970px) {
+  .menu__span::before,
+  .menu__span,
+  .menu__span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s; }
+  .menu__span::before {
+    content: "";
+    top: -8px; }
+  .menu__span::after {
+    content: "";
+    top: 8px; }
   .menu__toggle {
     opacity: 0;
     position: absolute;
@@ -286,23 +302,7 @@ h1 {
     width: 40px;
     height: 30px;
     cursor: pointer;
-    z-index: 1; }
-  .menu__span::before,
-  .menu__span,
-  .menu__span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: white;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s; }
-  .menu__span::before {
-    content: '';
-    top: -8px; }
-  .menu__span::after {
-    content: '';
-    top: 8px; } }
+    z-index: 1; } }
 
 @media screen and (max-width: 970px) {
   .nav__list-show {
